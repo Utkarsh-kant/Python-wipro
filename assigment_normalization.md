@@ -82,7 +82,7 @@ Remove transitive dependency.
 ✔ All attributes depend only on primary keys  
 
 
-## 🎯 Final Tables (3NF)
+## Final Tables (3NF)
 
 - Vendor(VendorCode, VendorName, Phone)  
 - Product(ProductCode, ProductDesc)  
