@@ -1,6 +1,6 @@
-# 📘 Assignment: Database Normalization
+#  Assignment: Database Normalization
 
-## 📝 Question
+##Question
 
 Normalize the following table into 1NF, 2NF, and 3NF:
 
@@ -13,7 +13,7 @@ Normalize the following table into 1NF, 2NF, and 3NF:
 
 ---
 
-## ✅ Step 1: First Normal Form (1NF)
+## Step 1: First Normal Form (1NF)
 
 Remove repeating groups and make values atomic.
 
@@ -31,11 +31,11 @@ Remove repeating groups and make values atomic.
 
 ---
 
-## ✅ Step 2: Second Normal Form (2NF)
+## Step 2: Second Normal Form (2NF)
 
 Remove partial dependency.
 
-### 🔹 Vendor Table
+###  Vendor Table
 
 | VendorCode | VendorName    | Phone      |
 |------------|--------------|------------|
@@ -46,7 +46,7 @@ Remove partial dependency.
 
 ---
 
-### 🔹 Product Table
+###  Product Table
 
 | ProductCode | ProductDesc        |
 |-------------|--------------------|
@@ -60,7 +60,7 @@ Remove partial dependency.
 
 ---
 
-### 🔹 Vendor_Product Table
+###  Vendor_Product Table
 
 | VendorCode | ProductCode | Price | Grade | Discount |
 |------------|-------------|-------|-------|----------|
@@ -74,14 +74,13 @@ Remove partial dependency.
 
 ---
 
-## ✅ Step 3: Third Normal Form (3NF)
+## Step 3: Third Normal Form (3NF)
 
 Remove transitive dependency.
 
 ✔ No transitive dependency exists  
 ✔ All attributes depend only on primary keys  
 
----
 
 ## 🎯 Final Tables (3NF)
 
@@ -89,9 +88,3 @@ Remove transitive dependency.
 - Product(ProductCode, ProductDesc)  
 - Vendor_Product(VendorCode, ProductCode, Price, Grade, Discount)  
 
----
-
-## 💡 Conclusion
-
-The given table is successfully normalized up to Third Normal Form (3NF).
-All repeating groups and partial dependencies are removed, and no transitive dependency exists.
